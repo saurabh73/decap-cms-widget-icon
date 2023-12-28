@@ -3,7 +3,7 @@ import { DynamicIcon } from './DynamicIcon';
 
 type IconGridProps = {
   items: string[];
-  iconFamily: string,
+  iconFamily: string;
   onChange: (icon: string) => void;
 };
 
