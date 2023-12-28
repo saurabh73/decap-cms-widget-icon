@@ -14,8 +14,6 @@
     "start": "tsdx watch",
     "build": "tsdx build --target web",
     "lint": "tsdx lint",
-    "lint:fix": "tsdx lint --fix",
-    "format": "tsdx format",
     "prepare": "husky install && tsdx build --target web",
     "analyze": "size-limit --why"
   },
@@ -45,7 +43,7 @@
     "size-limit": "^11.0.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "5.1.6"
   },
   "dependencies": {
     "@loadable/component": "^5.16.3"
