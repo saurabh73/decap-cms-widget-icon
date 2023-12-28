@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { icons } from './icons';
-import Pagination from './Pagination';
+import IconPickerContainer from './IconPickerContainer';
 
 export type ControlProps = {
   onChange(value: string): void;
@@ -70,7 +70,7 @@ export const IconControl = React.forwardRef<any, ControlProps>(
         </button>
 
         {showIconPicker && (
-          <Pagination
+          <IconPickerContainer
             items={iconList}
             itemsPerPage={102}
             iconFamily={iconFamily}
