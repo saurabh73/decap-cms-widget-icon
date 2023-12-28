@@ -14,7 +14,8 @@
     "start": "tsdx watch",
     "build": "tsdx build --target web",
     "lint": "tsdx lint",
-    "prepare": "tsdx build --target web",
+    "lint:fix": "tsdx lint --fix",
+    "prepare": "husky install && tsdx build --target web",
     "analyze": "size-limit --why"
   },
   "peerDependencies": {
