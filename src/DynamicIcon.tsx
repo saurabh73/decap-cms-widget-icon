@@ -26,7 +26,6 @@ type DynamicIconProp = {
 };
 
 export function DynamicIcon({ iconName, iconLib, iconProps }: DynamicIconProp) {
-  console.log("DynamicIcon", iconLib, iconName);
   const ElementIcon = loadable(() => importIcons(iconLib), {
     resolveComponent: el => el[iconName],
   });

@@ -10,7 +10,6 @@ export type PreviewProps = {
 
 export const IconPreview = ({ value, field }: PreviewProps) => {
   const iconFamily = field.get('iconFamily', 'fi');
-  console.log("Icon Family", iconFamily);
   return (
     <div
       style={{

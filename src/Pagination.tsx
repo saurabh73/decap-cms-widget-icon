@@ -44,7 +44,6 @@ const Pagination = ({
   };
 
   const handleItemChange = (icon: string) => {
-    console.log('Clicked', icon);
     onChangeItem(icon);
   };
 
